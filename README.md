@@ -16,20 +16,18 @@ About the DDA Algorithm:
 The DDA algorithm is used to cast rays from the player’s position into the game world to find where each ray hits a wall. It works by incrementally stepping through the grid cells of the map in the direction of the ray until it detects a collision with a wall. This allows the engine to calculate the distance to the wall and render the correct height of the wall slice on screen.
 
 Requirements:
-GCC or any C compiler
+- GCC or any C compiler
+- Unix-like OS (Linux, macOS)
+- MiniLibX graphics library
 
-Unix-like OS (Linux, macOS)
-
-MiniLibX graphics library
-
-How to Build
+How to Build:
 Clone the repo and run:
 
 `make`
 
 This will compile the program into an executable named cub3D.
 
-How to Use
+How to Use:
 Run the program:
 
 `./cub3D [map_file.cub]`
